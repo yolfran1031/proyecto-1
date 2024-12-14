@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lenguajes compilados e interpretados</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <style>
+        .right {
+            float: right;
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        .container {
+            overflow: auto;
+        }
+    </style>
+</head>
+
+<body>
+<h1>Bases teóricas de estructuras de almacenamiento en memoria.</h1>
+ <p>Esta evidencia se centra en consolidar los conceptos básicos relacionados con los lenguajes de programación, entornos de codificación e instalación y la sintaxis del lenguaje de JavaScript.    </p>
+<h3>desarrollo de la evidencia</h3>
+ <p>1. Principales diferencias entre los lenguajes compilados e interpretados.</p>
+  <ul>
+ <li> <b>Lenguajes compilados.</b></li>
+
+</ul>
+<p><p>Los lenguajes compilados son convertidos directamente a código máquina que el procesador puede ejecutar. Como resultado, suelen ser más rápidos y más eficientes al ejecutarse en comparación con los lenguajes interpretados. También le dan al desarrollador más control sobre aspectos del hardware, como la gestión de memoria y el uso del CPU.</p></p>
+<p>Estos lenguajes necesitan un paso de compilación (build) - primero necesitan compilarse manualmente. Necesitas "recompilar" el programa cada vez que necesites hacer un cambio. En nuestro ejemplo del hummus, la traducción completa está escrita antes de que la tengas.</p>
+<p>Los lenguajes compilados necesitan un paso previo de compilación, que toma el código fuente y lo convierte en un archivo ejecutable (generalmente binario). Este archivo se puede ejecutar directamente en la máquina. una ventaja clave de ello es que Una vez compilado, el programa se ejecuta rápidamente. generalmente son más rápidos en tiempo de ejecución porque el código ya ha sido traducido a lenguaje máquina y se ejecuta directamente.</p>
+<p>El código compilado es generalmente específico para una arquitectura o sistema operativo (ej. Windows, Linux), lo que significa que un programa compilado en una plataforma puede no funcionar en otra sin modificaciones. Estos lenguajes detectan errores durante la fase de compilación. Si hay un error, el código no se compila y no se puede ejecutar.</P>
+ <p>En el ciclo de desarrollo puede ser más lento debido a que después de cada cambio en el código, se requiere recompilar el programa para probarlo, y generalmente El programa se distribuye como un binario o ejecutable, lo que protege el código fuente y permite una distribución más eficiente para los usuarios finales.</p>
+<p>Algunos ejemplos de lenguajes compilados puros son C, C++, Erlang, Haskell, Rust y Go.</p>
+<img src="imagenes/leguaje C.jpg" alt="lenguaje C" width="170" height="100">
+<img src="imagenes/C++.jpg" alt="C++" width="150" height="100"> 
+<img src="imagenes/ERLANG.png" alt="C++" width="150" height="120"> 
+<img src="imagenes/Haskell.png" alt="C++" width="180" height="120"> 
+<img src="imagenes/Rust.png" alt="C++" width="200" height="120"> 
+<img src="imagenes/GO.png" alt="C++" width="130" height="100"> 
+<ul>
+<li> <b>Lenguajes interpretados.</b></li> 
+</ul>
+<p>Estos lenguajes ejecutan línea por línea o bloque por bloque por un programa llamado intérprete, sin necesidad de generar un archivo ejecutable completo previamente.</p>
+ <p>A diferencia de los lenguajes compilados, en los lenguajes interpretados No hay necesidad de compilar el código fuente previamente. El intérprete lee y ejecuta el código directamente, lo que facilita las pruebas rápidas y el desarrollo ágil.</p>
+  <p>Una desventaja de los lenguajes interpretados es que son más lentos en tiempo de ejecución, ya que el intérprete tiene que traducir el código a medida que se ejecuta, por otra parte, los lenguajes interpretados Son más portables, ya que el intérprete es el que se encarga de ejecutar el código. Mientras el intérprete esté disponible en la plataforma, el código fuente puede ejecutarse sin cambios.</p>
+   <p>Los errores de los lenguajes interpretados se detectan en tiempo de ejecución, es decir, el intérprete encuentra errores a medida que ejecuta el código, lo que puede llevar a que los errores solo aparezcan durante la ejecución del programa, y El ciclo de desarrollo es generalmente más rápido que el de los lenguajes compilados, porque no necesitas compilar el código; simplemente haces cambios y ejecutas el programa.</p>
+    <p>El ciclo de desarrollo de los lenguajes interpretados es generalmente más rápido porque no se necesita compilar el código; simplemente haces cambios y ejecutas el programa. Y para la distribución de un programa, normalmente se requiere distribuir el código fuente, que luego es ejecutado por el intérprete.</p>
+
+ <p>Los lenguajes interpretados alguna vez fueron significativamente más lentos que los lenguajes compilados. Pero, con el desarrollo de la compilación justo a tiempo, esa diferencia se está reduciendo.</p>
+
+ <p>Ejemplos comunes de lenguajes interpretados son PHP, Ruby, Python y JavaScript.</p>
+
+ <img src="imagenes/PHP.png" alt="PHP" width="150" height="170">
+ <img src="imagenes/RUBY.png" alt="PHP" width="110" height="130">
+ <img src="imagenes/python.jpg" alt="PHP" width="160" height="130">
+ <img src="imagenes/js.png" alt="PHP" width="180" height="130">
+
+   <p> <b> 2. Características principales de JavaScript.</b></p>
+ 
+   <p>A continuación las principales características de Javascript las cuales definen de forma general, este lenguaje :</p>
+ <div>
+    <img src="imagenes/js.png" alt="js" class="right" width="580px">
+    <ul>
+        <li> <b>Lenguaje interpretado:</b> JavaScript es ejecutado directamente por el navegador (o un entorno como Node.js) sin necesidad de compilación previa, lo que permite una mayor agilidad en el desarrollo web.</li>
+    </ul>
+ </div>
+   
+ <ul>
+    
+    <li> <b>Orientado a objetos basado en prototipos:</b> A diferencia de lenguajes como Java o C++ que utilizan clases, JavaScript utiliza prototipos para crear objetos y heredar propiedades y métodos.</li>
+</ul>
+
+<ul>
+    <li> <b>Lenguaje de alto nivel y dinámico:</b> No es necesario declarar el tipo de las variables antes de usarlas, ya que JavaScript es débilmente tipado. El lenguaje se adapta a los tipos en tiempo de ejecución.</li>
+</ul>
+<ul>
+    <li><b>Multi-plataforma: </b> Al ser un lenguaje utilizado principalmente en el navegador, JavaScript es altamente portátil y puede ejecutarse en cualquier dispositivo que tenga un navegador compatible.</li>
+</ul>
+<ul>
+    <li><b>Asíncrono y orientado a eventos:</b> JavaScript permite manejar operaciones asíncronas fácilmente (como peticiones HTTP) mediante funciones callback, promesas y async/await. Esto es crucial en el desarrollo de aplicaciones web interactivas y eficientes.</li>
+</ul>
+<ul>
+    <li><b>Ampliamente soportado en navegadores:</b> Es el lenguaje principal para añadir interactividad en las páginas web y está soportado por todos los navegadores modernos sin necesidad de instalaciones adicionales.</li>
+</ul>
+<ul>
+    <li><b>Manipulación del DOM:</b> JavaScript permite interactuar y modificar el Document Object Model (DOM) de las páginas web, lo que le da gran control sobre la estructura y el contenido dinámico de una página.</li>
+</ul>
+<ul>
+    <li><b>Lenguaje de propósito general:</b> Aunque es más conocido por su uso en la web, con entornos como Node.js, JavaScript puede ser utilizado también en el backend (servidor), aplicaciones de escritorio, móviles y más.</li>
+</ul>
+<ul>
+    <li><b>Compatibilidad con bibliotecas y frameworks:</b> Existen muchas bibliotecas y frameworks populares (como React, Angular, Vue) que extienden las funcionalidades de JavaScript y facilitan el desarrollo de aplicaciones web.</li>
+</ul>
+<ul>
+    <li><b>Compatible con JSON:</b> JavaScript es nativamente compatible con el formato de intercambio de datos JSON (JavaScript Object Notation), lo que lo hace ideal para trabajar con datos estructurados en aplicaciones web.
+    </li>
+</ul>
+
+ <p> <b>3. Tipos de datos primitivos y uso en JavaScript.  </b></p>
+ <img src="imagenes/datos js.jpg" alt="datos" class="right" width="500px">
+  <p>JavaScript tiene los siguientes tipos de operadores (se describirán los principales para aprender a programar).
+
+    Según sea el tipo que las variables o constantes almacenan, se pueden clasificar en seis (6) tipos de datos primitivos la referencia del lenguaje dice que son:</p>
+<ul>
+    <li><b>Undefined:</b> indeterminado o indefinido.</li>
+</ul>
+<ul>
+    <li>  <b>Boolean:</b> tipo booleano los valores posibles son true o false.</li>
+</ul>
+<ul>
+    <li> <b>Number:</b> números enteros, o decimales.</li>
+</ul>
+<ul>
+    <li> <b>String: </b>cadenas de texto.</li>
+</ul>
+<ul>
+    <li> <b>BigInt:</b> números enteros grandes.</li>
+</ul>
+<ul>
+    <li> <b>Symbol:</b> referencia a otros datos.</li>
+</ul>
+ <p>Otros tipos de datos más complejos o abstractos de datos:</p>
+<ul>
+    <li> <b>Null: </b>tipo primitivo especial que tiene un uso adicional</li>
+</ul>
+<ul>
+    <img src="imagenes/let.png" alt="let" class="right" width="500px">
+    <li> <b>Object: </b>tipo estructural especial que no es de datos, pero para cualquier instancia de objeto construido que también se utiliza como estructuras de datos (new Object, new Array, new Map, new Set, new WeakMap, new WeakSet, new Date y casi todo lo hecho con la palabra clave new).</li>
+</ul>
+<ul>
+    <li> <b>Function: </b>una estructura sin datos, aunque también responde al operador t.</li>
+</ul>
+ <p>Cuando se declaran variables se debe considerar los siguientes tipos, ya se han usado dos (2) de ellas:</p>
+<ul>
+    <li> <b>var: </b>declara una variable, opcionalmente la inicia a un valor.</li>
+</ul>
+<ul>
+    <li> <b>let: </b>declara una variable local con ámbito de bloque, opcionalmente la inicia a un valor.</li>
+</ul>
+<ul>
+    <li> <b>const: </b>declara un nombre de constante de solo lectura y ámbito de bloque.</li>
+</ul>
+ <p> <b>Uso de los tipos de datos primitivos en JavaScript:</b></p>
+  <p>Los tipos primitivos se utilizan para almacenar valores simples que no requieren estructuras complejas.
+    A diferencia de los objetos, los primitivos son inmutables, lo que significa que su valor no puede cambiar una vez que se han creado (aunque la variable que los contiene sí puede cambiar de valor).</p>
+ <p> <b>3. Operadores en JavaScript. </b></p>
+ <p>Se considera una expresión, aunque de un tipo distinto, el asignar un valor a una variable. Para todas estas operaciones se emplean los denominados ‘operadores‘. Se listan a continuación algunos de los operadores que se utilizan con mucha frecuencia.</p>
+ <p> <b>Operadores de asignación.</b></p>
+ <p>Un operador de asignación asigna un valor a la variable a la izquierda basándose en el valor de su operando derecho. El operador de asignación más simple es igual (=), que asigna el valor de su operando derecho a su operando izquierdo. Es decir, x = y asigna el valor de y a x. A continuación, se presenta una lista de operadores más usados.</p>
+ <p>También hay operadores de asignación compuestos que son una abreviatura de las operaciones enumeradas en la siguiente tabla:</p>
+<img src="imagenes/tabla1.png" alt="tabla 1" width="80%">
+ <p> <b>Operadores de comparación.</b></p>
+ <p>Son operadores cuya función es comparar dos expresiones y como resultado de la comparación devuelven un valor falso o verdadero (booleano), que representa la relación de sus valores comparados. Existen operadores para comparar valores numéricos, pero también operadores para comparar cadenas y operadores para comparar otros tipos de datos (tabla 3).</p>
+<img src="imagenes/tabla 2.png" alt="tabla2" width="80%">
+ <p> <b>Operadores de aritméticos.</b></p>
+ <p>Los operadores aritméticos toman valores numéricos (ya sean literales o variables) como sus operandos y devuelve un solo valor numérico. Los operadores aritméticos básicos son suma (+), resta (-), multiplicación (*) y división (/). Estos operadores funcionan como en la mayoría de los otros lenguajes de programación cuando se usan con números de punto flotante, teniendo en cuenta que la división por cero produce un error (tabla 4).</p>
+<img src="imagenes/tabla 3.png" alt="tabla3" width="80%">
+ <p> <b>Operadores lógicos.</b></p>
+ <p>Con los operadores lógicos, se pueden crear condiciones compuestas, por ejemplo, cuando se deben cumplir dos o más condiciones para elegir las operaciones ejecutar; además, se pueden describir estas combinaciones de condiciones (tabla 5 y figura 5).</p>
+<img src="imagenes/tabla 4.png" alt="tabla4" width="80%">
+ <p>Se han presentado los operadores más comunes, aunque existen otros tipos de operadores que tal vez no son los más empleados y una referencia completa la puede obtener desde el recurso web denominado Expresiones y operadores (MDN, 2021a).</p>
+<img src="imagenes/imagen 1.png" alt="imagen1" width="30%">
+ <br>
+  <br>
+ <a href="https://www.freecodecamp.org/espanol/news/lenguajes-compilados-vs-interpretados/" target="_blank">interpretados vs compilados fuente 1</a>
+  <br>
+   <br>
+ <a href="https://manualweb.net/javascript/caracteristicas-javascript/" target="_blank">caracteristicas javascript fuente 2</a>
+  <br>
+   <br>
+ <a href="https://zajuna.sena.edu.co/Repositorio/Titulada/institution/SENA/Tecnologia/228118/Contenido/OVA/CF14/index.html#/curso/tema3" target="_blank">codificacion de algoritmos fuente 3</a>
+
+</body>
+</html>
